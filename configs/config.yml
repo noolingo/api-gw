@@ -1,11 +1,11 @@
 app:
-    cors: false
+    cors: true
     rolesAccess: {}
     accessMap: {
-      auth: any
+      /auth: any
     }
     accessPrefix: [
-      auth
+      /auth
     ]
 listen:
     ports:
@@ -15,7 +15,7 @@ log:
     level: {any: debug}
 grpc:
     clients:
-        userservice: "localhost: 9001"
-        cardservice: "localhost: 9002"
-        deckservice: "localhost: 9003"
-        statisticservice: "localhost: 9004"
+        userservice: "localhost:9001"
+        cardservice: "localhost:9002"
+        deckservice: "localhost:9003"
+        statisticservice: "localhost:9004"
