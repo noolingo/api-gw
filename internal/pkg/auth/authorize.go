@@ -16,7 +16,7 @@ type user struct {
 }
 
 const (
-	AuthorizationHeaderKey = "Authorization"
+	AuthorizationHeaderKey = "Authorization" //временная затычка
 )
 
 func DefaultAuthorizeFunc(client noolingo.UserClient, lg *logrus.Logger) AuthorizeFunc {
