@@ -52,7 +52,8 @@ func Run(configPath string) error {
 			DeckService:      cfg.Grpc.Clients.DeckService,
 			StatisticService: cfg.Grpc.Clients.StatisticService,
 		},
-		Cors: cfg.App.Cors,
+		Secret: cfg.Auth.AccessSecretKey,
+		Cors:   cfg.App.Cors,
 	}, log)
 
 	if err != nil {

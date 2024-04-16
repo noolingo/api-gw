@@ -5,6 +5,11 @@ type Config struct {
 	Listen ListenConfig `yaml:"listen" env-prefix:"NOOLINGO_LISTEN_" json:"listen"`
 	Log    Logger       `yaml:"log" env-prefix:"NOOLINGO_" json:"log"`
 	Grpc   Grpc         `yaml:"grpc" env-prefix:"NOOLINGO_" json:"grpc"`
+	Auth   AppAuth      `yaml:"auth" env-prefix:"AUTH_"`
+}
+
+type AppAuth struct {
+	AccessSecretKey string `yaml:"access-secret-key" env:"ACCESS_SECRET_KEY"`
 }
 
 type App struct {

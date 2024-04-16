@@ -4,6 +4,7 @@ go 1.21.6
 
 require (
 	github.com/MelnikovNA/noolingoproto v0.0.0-20240203091227-a775bee0d28d
+	github.com/golang-jwt/jwt v3.2.2+incompatible
 	github.com/grpc-ecosystem/grpc-gateway/v2 v2.19.1
 	github.com/ilyakaznacheev/cleanenv v1.5.0
 	github.com/rs/cors v1.10.1

@@ -24,6 +24,7 @@ type Configs struct {
 	AccessMap    map[string]string
 	RolesAccess  map[string]int
 	AccessPrefix []string
+	Secret       string
 }
 
 type GrpcClients struct {
@@ -112,17 +113,12 @@ func NewGateway(ctx context.Context, cfg *Configs, lg *logrus.Logger) (*Gateway,
 		handler = cors.AllowAll().Handler(mux)
 	}
 
-	userConn, err := grpc.Dial(cfg.GrpcClients.UserService, opts...)
-	if err != nil {
-		return nil, err
-	}
-
 	handler = auth.NewAuthorizedHandler(
 		cfg.AccessMap,
 		cfg.RolesAccess,
 		cfg.AccessPrefix,
 		handler,
-		auth.DefaultAuthorizeFunc(noolingo.NewUserClient(userConn), lg),
+		auth.DefaultAuthorizeFunc(cfg.Secret),
 		auth.DefaultAnnotateContextFunc(),
 		lg,
 	)

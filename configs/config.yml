@@ -19,3 +19,5 @@ grpc:
         cardservice: "localhost:9002"
         deckservice: "localhost:9003"
         statisticservice: "localhost:9004"
+auth:
+    access-secret-key: qwerty
