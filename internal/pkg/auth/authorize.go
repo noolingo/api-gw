@@ -3,7 +3,7 @@ package auth
 import (
 	"context"
 
-	"github.com/MelnikovNA/noolingo-api-gw/internal/pkg/parsetoken"
+	"github.com/noolingo/api-gw/internal/pkg/parsetoken"
 )
 
 const (

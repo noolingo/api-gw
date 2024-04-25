@@ -5,10 +5,10 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/MelnikovNA/noolingo-api-gw/internal/pkg/apierrors"
-	"github.com/MelnikovNA/noolingo-api-gw/internal/pkg/auth"
-	"github.com/MelnikovNA/noolingoproto/codegen/go/noolingo"
 	"github.com/grpc-ecosystem/grpc-gateway/v2/runtime"
+	"github.com/noolingo/api-gw/internal/pkg/apierrors"
+	"github.com/noolingo/api-gw/internal/pkg/auth"
+	"github.com/noolingo/proto/codegen/go/noolingo"
 	"github.com/rs/cors"
 	"github.com/sirupsen/logrus"
 	"google.golang.org/grpc"

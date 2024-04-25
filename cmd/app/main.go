@@ -4,7 +4,7 @@ import (
 	"log"
 	"os"
 
-	"github.com/MelnikovNA/noolingo-api-gw/internal/app"
+	"github.com/noolingo/api-gw/internal/app"
 )
 
 const configPath = "configs/config.yml"

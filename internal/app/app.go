@@ -7,8 +7,8 @@ import (
 	"os/signal"
 	"syscall"
 
-	"github.com/MelnikovNA/noolingo-api-gw/internal/domain"
-	"github.com/MelnikovNA/noolingo-api-gw/internal/pkg/gateway"
+	"github.com/noolingo/api-gw/internal/domain"
+	"github.com/noolingo/api-gw/internal/pkg/gateway"
 	"github.com/ilyakaznacheev/cleanenv"
 	"github.com/sirupsen/logrus"
 )

@@ -7,7 +7,7 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/MelnikovNA/noolingo-api-gw/internal/pkg/apierrors"
+	"github.com/noolingo/api-gw/internal/pkg/apierrors"
 	"github.com/sirupsen/logrus"
 )
 

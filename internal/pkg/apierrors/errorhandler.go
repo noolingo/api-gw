@@ -5,10 +5,9 @@ import (
 	"encoding/json"
 	"net/http"
 
-	"github.com/MelnikovNA/noolingoproto/codegen/go/apierrors"
-	"github.com/MelnikovNA/noolingoproto/codegen/go/common"
-
 	"github.com/grpc-ecosystem/grpc-gateway/v2/runtime"
+	"github.com/noolingo/proto/codegen/go/apierrors"
+	"github.com/noolingo/proto/codegen/go/common"
 	"github.com/sirupsen/logrus"
 )
 
