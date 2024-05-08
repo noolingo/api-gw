@@ -1,0 +1,21 @@
+app:
+    cors: true
+    rolesAccess: {}
+    accessMap: {
+      /auth: any
+    }
+    accessPrefix: [
+      /auth
+    ]
+listen:
+    ports:
+        http: "8088"
+    host: 0.0.0.0
+log:
+    level: {any: debug}
+grpc:
+    clients:
+        userservice: "localhost:9001"
+        cardservice: "localhost:9002"
+        deckservice: "localhost:9003"
+        statisticservice: "localhost:9004"
