@@ -6,7 +6,7 @@ require (
 	github.com/golang-jwt/jwt v3.2.2+incompatible
 	github.com/grpc-ecosystem/grpc-gateway/v2 v2.19.1
 	github.com/ilyakaznacheev/cleanenv v1.5.0
-	github.com/noolingo/proto v0.0.0-20240424123514-1a773143721a
+	github.com/noolingo/proto v0.0.0-20240521113906-6efa32a598bc
 	github.com/rs/cors v1.10.1
 	github.com/sirupsen/logrus v1.9.3
 	google.golang.org/grpc v1.63.2
